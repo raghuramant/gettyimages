@@ -10,6 +10,7 @@ public class MainScript extends Utilities {
 	public static void main(String[] args) throws InterruptedException {
 		browserOpen();
 		launchURL("https://www.gettyimages.in/");
+		System.out.println("Sample");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		click(driver.findElement(By.xpath("(//div[@class='ups-menu-item ups-account ups-sign-in'])[2]")));
 		driver.findElement(By.linkText("Register")).click();
